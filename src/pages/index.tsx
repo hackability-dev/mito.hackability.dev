@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Team } from "../components/team"
 import { Footer } from "../components/footer"
+import { Header } from "../components/header"
 
 const Hero = () => (
   <div className="mb-10">
@@ -42,16 +43,16 @@ const Hero = () => (
                     </svg>
                   </a>
                   <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                    <span className="block">Costruiamo insieme</span>
+                    <span className="block">Nasce il tavolo</span>
                     <span className="block text-green-400">
-                      Space Hackability
+                      Hackability@MiTo
                     </span>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Sei un programmatore, un nerd, uno smanettone? Abbiamo più
-                    di 120 progetti in open source e un portale per documentarli
-                    e metterli a disposizione di tutti che funziona meno bene di
-                    quanto vorremmo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum ea repellat repellendus nostrum voluptatum vel eveniet
+                    officiis distinctio quibusdam cumque sit est, voluptas illum
+                    dolorum dolorem quidem eligendi molestias corporis..
                   </p>
 
                   <div className="mt-10 sm:mt-12">
@@ -92,13 +93,15 @@ const IndexPage = ({ data }) => (
       title="Costruiamo insieme Space Hackability"
       description="Sei un programmatore, un nerd, uno smanettone? Abbiamo più di 120 progetti in open source e un portale per documentarli e metterli a disposizione di tutti che funziona meno bene di quanto vorremmo."
     />
+    <Header />
     <Hero />
-    <Events events={data.events.nodes} />
-    <Team members={data.team.edges.map(e => e.node)} />
 
     <div className="max-w-prose md:m-auto prose m-2">
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </div>
+
+    <Team members={data.team.edges.map(e => e.node)} />
+
     <Footer />
   </Layout>
 )

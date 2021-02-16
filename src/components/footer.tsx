@@ -4,43 +4,7 @@ export const Footer = () => (
       <nav
         className="-mx-5 -my-2 flex flex-wrap justify-center"
         aria-label="Footer"
-      >
-        {/* <div className="px-5 py-2">
-          <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-            About
-          </a>
-        </div>
-
-        <div className="px-5 py-2">
-          <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-            Blog
-          </a>
-        </div>
-
-        <div className="px-5 py-2">
-          <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-            Jobs
-          </a>
-        </div>
-
-        <div className="px-5 py-2">
-          <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-            Press
-          </a>
-        </div>
-
-        <div className="px-5 py-2">
-          <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-            Accessibility
-          </a>
-        </div>
-
-        <div className="px-5 py-2">
-          <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-            Partners
-          </a>
-        </div> */}
-      </nav>
+      ></nav>
       <div className="mt-8 flex justify-center space-x-6">
         <a
           href="https://github.com/hackability-dev"
@@ -62,7 +26,7 @@ export const Footer = () => (
         </a>
       </div>
       <p className="mt-8 text-center text-base text-gray-400">
-        hackability.dev è un progetto aperto di{" "}
+        hackability@MiTo è un progetto aperto di{" "}
         <a className="font-bold underline" href="http://www.hackability.it">
           Hackability NPO
         </a>
